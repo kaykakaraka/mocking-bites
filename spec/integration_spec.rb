@@ -2,7 +2,7 @@ require 'music_library'
 require 'track'
 
 RSpec.describe "integration" do
-  xit "shows tracks added to the library" do
+  it "shows tracks added to the library" do
     library = MusicLibrary.new
     track_1 = Track.new("Sugar", "The Babe")
     track_2 = Track.new("We Will Rock You", "Queen")
@@ -11,7 +11,7 @@ RSpec.describe "integration" do
     expect(library.all).to eq [track_1, track_2]
   end
 
-  xit "finds track by keyword" do
+  it "finds track by keyword" do
     library = MusicLibrary.new
     track_1 = Track.new("Sugar", "The Babe")
     track_2 = Track.new("We Will Rock You", "Queen")
@@ -20,7 +20,7 @@ RSpec.describe "integration" do
     expect(library.search("rock")).to eq [track_2]
   end
 
-  xit "find multiple tracks by keyword" do
+  it "find multiple tracks by keyword" do
     library = MusicLibrary.new
     track_1 = Track.new("Sugar", "The Babe")
     track_2 = Track.new("We Will Rock You", "Queen")
