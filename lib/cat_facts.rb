@@ -20,5 +20,5 @@ class CatFacts
 end
 
 
-#cat_fact = CatFacts.new(Net::HTTP)
-#p cat_fact.provide
+cat_fact = CatFacts.new(Net::HTTP)
+p cat_fact.provide
