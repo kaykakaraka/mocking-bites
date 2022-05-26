@@ -20,7 +20,9 @@ end
 
 
 
-
+=begin
 
 interactive_calculator = InteractiveCalculator.new(Kernel)
 p interactive_calculator.run
+
+=end
